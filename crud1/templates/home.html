@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineImperial</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Estilos personalizados aquí */
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Cine Imperial</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">   
+                <div class="col-lg-8">
+                    <h1 class="display-4">¡Bienvenido a Cine Imperial!</h1>
+                    <p class="lead">Disfruta de las mejores películas en nuestra cartelera.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i0.wp.com/www.vfxexpress.com/wp-content/uploads/2023/11/Untitled-design-2023-11-21T123043.990.jpg?fit=1170%2C658&ssl=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://warp.la/wp-content/uploads/2023/12/Wonka.05.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.diariodevenusville.com/wp-content/uploads/2022/03/THE-BATMAN-carat.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Películas Section -->
+    <section class="peliculas">
+        <div class="container">
+            <h2 class="text-center">Cartelera</h2>
+            <div class="row">
+                <!-- Aquí puedes iterar sobre las películas y mostrarlas -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="https://www.ecartelera.com/carteles/11100/11185/001_m.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Batman</h5>
+                            <p class="card-text">En su segundo año luchando contra el crimen, Batman explora la corrupción existente en la ciudad de Gotham y el vínculo de esta con su propia familia. Además, entrará en conflicto con un asesino en serie conocido como "el Acertijo".</p>
+                            <a href="#" class="btn btn-primary">Ver trailer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="https://mx.web.img3.acsta.net/pictures/23/12/11/18/50/5623227.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Aquaman: El Reino Perdido</h5>
+                            <p class="card-text">Arthur se ve obligado a sacar de prisión a su hermanastro, Orm, para que lo ayude a detener a Kane, quien ha atacado Atlantis tras encontrar un tridente negro que lo posee y le da la fuerza para vengar la muerte de su padre.</p>
+                            <br/>
+                            <a href="#" class="btn btn-primary">Ver trailer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="https://pics.filmaffinity.com/Wonka-113186318-large.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wonka</h5>
+                            <p class="card-text">Armado únicamente con muchos sueños y ganas de aventura, el joven chocolatero Willy Wonka conoce a los oompa-loompas y se dispone a cambiar el mundo.</p>
+                            <br/>
+                            <br/>
+
+                            <br/>
+
+                            <a href="#" class="btn btn-primary">Ver trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

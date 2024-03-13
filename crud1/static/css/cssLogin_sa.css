@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(9, 11, 110) !important; /* Color de fondo azul */
+    color: rgb(218, 160, 3); /* Color del texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Agrega estilos CSS personalizados */
+.modal-body{
+    color: black; /* Cambia el color del texto a negrox */
+    font-size: 20px; /* Aumenta el tamaño de la fuente */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.white-text {
+    color: black; /* Cambia el color del texto a negrox */
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeInAnimation;
+    animation-duration: 1s; /* Duración de la animación */
+}
+

@@ -1,0 +1,98 @@
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: rgb(104, 106, 246) !important;
+    font-family: 'Arial', sans-serif; /* Fuente */
+    text-align: center; /* Centrar el contenido */
+    font-size: 18px; /* Tamaño de fuente */
+
+}
+ 
+/* Estilos para el campo de usuario */
+.form-group label[for="user"] {
+    color: #ffffff; /* Color del texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.image-container {
+    position: absolute;
+    top: 50%;
+    right: 10%; /* Ajusta esta propiedad según tu diseño */
+    transform: translateY(-50%);
+}
+.form-group input#user {
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 2px; /* Relleno */
+    width: 10%; /* Ancho del campo */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho total */
+}
+
+.form-group label[for="password"] {
+    color: #ffffff; /* Color del texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.form-group input#password {
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 2px; /* Relleno */
+    width: 10%; /* Ancho del campo */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho total */
+}
+
+/* Estilos para el campo de contraseña */
+.form-group label[for="password"] {
+    color: #333; /* Color del texto */
+}
+
+.card-title {
+    color: rgb(218, 160, 3); /* Color del texto */    font-size: 70px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* Animación de desvanecimiento */
+    animation-name: fade-in;
+    animation-duration: 1s; /* Duración de la animación en segundos */
+    animation-timing-function: ease-in-out; /* Función de temporización de la animación */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para el botón */
+.btn-primary {
+    font-size: 120%;
+    background-color: #007bff; /* Color de fondo del botón */
+    border-color: #ffffff; /* Color del borde del botón */
+    border-radius: 20px; /* Radio de las esquinas del botón */
+    margin-top: auto;
+    padding: 10px 60px; /* Ajuste del tamaño del botón */
+    transition: background-color 0.3s ease; /* Animación de cambio de color */
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+    border-color: #0056b3; /* Color del borde del botón al pasar el mouse */
+    background-color: #ffffff; /* Color de fondo del botón al pasar el cursor */
+
+}
+
+/* Estilos para el formulario */
+.form-control {
+    border-color: #05294d; /* Color del borde del campo de entrada */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:  20PX;
+}
+
+/* Estilos para el mensaje de error */
+.alert-danger {
+    background-color: #f8d7da; /* Color de fondo del mensaje de error */
+    border-color: #f5c6cb; /* Color del borde del mensaje de error */
+    color: #721c24; /* Color del texto del mensaje de error */
+}
